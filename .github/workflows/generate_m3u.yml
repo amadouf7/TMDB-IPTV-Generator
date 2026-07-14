@@ -37,6 +37,7 @@ jobs:
           git config user.email "actions@github.com"
           git add vod_enriched_from_server.m3u tmdb_cache.json
           git commit -m "Mise à jour automatique du fichier M3U enrichi" || echo "Aucune modification à committer"
-          git push
+          git pull --rebase origin main || echo "Pas de mise à jour distante"
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
