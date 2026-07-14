@@ -1,0 +1,14 @@
+{
+  "movies": [
+    "Inception",
+    "Avatar",
+    "Interstellar",
+    "Gladiator"
+  ],
+  "series": [
+    "Breaking Bad",
+    "Game of Thrones",
+    "The Boys",
+    "Lupin"
+  ]
+}
