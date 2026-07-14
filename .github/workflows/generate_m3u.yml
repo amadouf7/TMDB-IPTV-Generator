@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout du dépôt
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4   # ✅ mise à jour vers Node.js 24
 
       - name: Configuration de Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5   # ✅ mise à jour vers Node.js 24
         with:
           python-version: "3.11"
 
@@ -41,5 +41,3 @@ jobs:
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
